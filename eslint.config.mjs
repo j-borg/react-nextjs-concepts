@@ -1,8 +1,11 @@
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import jestDom from 'eslint-plugin-jest-dom'
 import pluginQuery from '@tanstack/eslint-plugin-query'
+import testingLibrary from 'eslint-plugin-testing-library'
 
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -15,7 +18,13 @@ const compat = new FlatCompat({
 const eslintConfig = [
   eslintPluginPrettierRecommended,
   ...compat.extends('next/core-web-vitals', 'next/typescript', 'plugin:prettier/recommended'),
-  ...pluginQuery.configs['flat/recommended']
+  ...pluginQuery.configs['flat/recommended'],
+  {
+    plugins: {
+      'jest-dom': fixupPluginRules(jestDom),
+      'testing-library': fixupPluginRules(testingLibrary)
+    }
+  }
 ]
 
 export default eslintConfig

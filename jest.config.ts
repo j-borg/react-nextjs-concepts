@@ -15,6 +15,7 @@ export default () => {
     preset: 'ts-jest',
     resetMocks: true,
     roots: ['<rootDir>/src'],
+    setupFilesAfterEnv: ['<rootDir>/src/tests/jest.setup-files-after-env.ts'],
     testMatch: ['<rootDir>/src/**/*.test.{js,jsx,ts,tsx}'],
     transform: {
       '^.+\\.(js|jsx|ts|tsx)?$': ['babel-jest', { presets: ['next/babel'] }]
