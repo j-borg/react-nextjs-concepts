@@ -2,10 +2,12 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
 import common from '@/locales/common-en.json'
+import user from '@/domains/user/user.locale-en.json'
 
 const resources = {
   en: {
-    common
+    common,
+    user
   }
 }
 
