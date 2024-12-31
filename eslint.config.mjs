@@ -1,6 +1,7 @@
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import jestDom from 'eslint-plugin-jest-dom'
 import pluginQuery from '@tanstack/eslint-plugin-query'
+import sonarjs from 'eslint-plugin-sonarjs'
 import testingLibrary from 'eslint-plugin-testing-library'
 
 import { dirname } from 'path'
@@ -22,6 +23,7 @@ const eslintConfig = [
   {
     plugins: {
       'jest-dom': fixupPluginRules(jestDom),
+      'sonarjs': fixupPluginRules(sonarjs),
       'testing-library': fixupPluginRules(testingLibrary)
     }
   }
