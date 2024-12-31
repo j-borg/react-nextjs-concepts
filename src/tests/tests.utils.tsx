@@ -3,7 +3,7 @@ import { I18nextProvider } from 'react-i18next'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { render, RenderOptions, RenderResult } from '@testing-library/react'
 
-import i18nService from '@/foundation/services/service.i18'
+import i18nService from '@/foundation/services/service.i18n'
 
 const createTestQueryClient = () => {
   return new QueryClient({ defaultOptions: { queries: { retry: false } } })

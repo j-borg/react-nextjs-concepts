@@ -2,7 +2,7 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import { HydrationBoundary, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-import '@/foundation/services/service.i18'
+import '@/foundation/services/service.i18n'
 import '@/foundation/styles/globals.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {

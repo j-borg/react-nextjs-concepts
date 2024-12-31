@@ -1,0 +1,3 @@
+/*
+ * Example settings directory
+ */

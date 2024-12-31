@@ -4,7 +4,7 @@ import { User } from '@/types/types.user'
 
 export interface UserClientState {
   create(params: Partial<User>): Promise<User>
-  get(params: Partial<User>): () => Promise<User>
+  get(query: Partial<User>): () => Promise<User>
   delete(params: Partial<User>): Promise<User>
   update(params: Partial<User>): Promise<User>
 }

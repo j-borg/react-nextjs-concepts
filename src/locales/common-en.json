@@ -1,3 +1,6 @@
 {
-  "title": "react-nextjs-concepts"
+  "error": "Data not found",
+  "loading": "Loading...",
+  "subtitle": "A display of best practices, conventions and tooling",
+  "title": "React & Next.js Concepts"
 }
