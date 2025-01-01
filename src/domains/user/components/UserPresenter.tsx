@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { useQueryUser } from '../hooks/useQueryUser'
-import { USER_GUID } from '../user.settings'
+import { USER_GUID } from '../user.fixtures'
 import { UserView } from './UserView'
 
 export const UserPresenter: React.FC = () => {

@@ -14,7 +14,7 @@ This project illustrates how to implement the MVP pattern in a Next.js applicati
 
 This project provides examples of testing React components, React hooks, and Tanstack Query hooks using Jest.
 
-### Code Quality
+### Code Quality & Code Style
 
 The following tools are used to ensure code quality:
 

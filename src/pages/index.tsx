@@ -9,7 +9,7 @@ import { Heading } from '@/foundation/components/typography/Heading'
 import { UserDeleteButtonPresenter } from '@/domains/user/components/UserDeleteButtonPresenter'
 import { UserPresenter } from '@/domains/user/components/UserPresenter'
 import { userServerState } from '@/domains/user/state/user.server-state'
-import { USER_GUID } from '@/domains/user/user.settings'
+import { USER_GUID } from '@/domains/user/user.fixtures'
 
 const openSans = Open_Sans({
   weight: ['400', '600'],

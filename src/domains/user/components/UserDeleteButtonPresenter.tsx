@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { QueryMutationType } from '@/types/types.queries'
 import { useMutationUser } from '../hooks/useMutationUser'
-import { USER_GUID } from '../user.settings'
+import { USER_GUID } from '../user.fixtures'
 import { UserDeleteButtonView } from './UserDeleteButtonView'
 
 export const UserDeleteButtonPresenter: React.FC = () => {
