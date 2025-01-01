@@ -5,7 +5,12 @@ import { getUserQueryKey } from '../user.utilities'
 import { QueryMutationType } from '@/types/types.queries'
 import { userClientState } from '../state/user.client-state'
 
-export const useMutationUser = ({ guid, type }: { guid: string; type: QueryMutationType }) => {
+export interface UseMutationUserParams {
+  guid: string
+  type: QueryMutationType
+}
+
+export const useMutationUser = ({ guid, type }: UseMutationUserParams) => {
   const queryClient = useQueryClient()
 
   const userMutationRequest = React.useCallback(() => {

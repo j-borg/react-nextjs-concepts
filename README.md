@@ -1,5 +1,19 @@
 ## React & Next.js concepts
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project showcases best practices, conventions, and tooling, and is not intended to function as a real application.
 
-This project is a display of best practices, conventions and tooling. This is not a real application.
+### Code Quality
+
+The following tools are used to ensure code quality:
+
+1. Chromatic
+2. ESlint
+3. Husky
+4. Jest
+5. Prettier
+6. Sentry
+7. Stylelint
+
+### Tests
+
+This project provides examples of testing React components, React hooks, and Tanstack Query hooks using Jest.
