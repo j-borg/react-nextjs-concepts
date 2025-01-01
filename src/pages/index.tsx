@@ -32,7 +32,7 @@ const Page = () => {
 
   return (
     <div className={classnames('p-8', openSans.className)}>
-      <main className='bg-white flex flex-col mx-auto px-8 py-6 rounded-xl space-y-6 text-slate-800 w-full max-w-3xl'>
+      <main className='bg-white flex flex-col mx-auto px-8 py-6 rounded-xl space-y-6 w-full max-w-3xl'>
         <header>
           <Heading isBold>{t('title')}</Heading>
 

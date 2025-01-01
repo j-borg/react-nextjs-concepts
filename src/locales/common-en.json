@@ -1,6 +1,6 @@
 {
   "error": "Data not found",
   "loading": "Loading...",
-  "subtitle": "A display of best practices, conventions and tooling",
+  "subtitle": "This project showcases best practices, conventions, and tooling, and is not intended to function as a real application.",
   "title": "React & Next.js Concepts"
 }

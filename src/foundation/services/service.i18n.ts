@@ -5,10 +5,7 @@ import common from '@/locales/common-en.json'
 import user from '@/domains/user/user.locale-en.json'
 
 const resources = {
-  en: {
-    common,
-    user
-  }
+  en: { common, user }
 }
 
 i18n.use(initReactI18next).init({

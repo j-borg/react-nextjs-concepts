@@ -22,6 +22,9 @@ export const Error = {
   args: {
     ...Default.args,
     isError: true
+  },
+  argTypes: {
+    ...Default.argTypes
   }
 }
 
@@ -29,5 +32,8 @@ export const Loading = {
   args: {
     ...Default.args,
     isLoading: true
+  },
+  argTypes: {
+    ...Default.argTypes
   }
 }
