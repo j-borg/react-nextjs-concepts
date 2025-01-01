@@ -14,8 +14,8 @@ const buttonSpy = jest.fn()
 
 const defaultProps: ButtonProps = {
   children: 'button-text',
-  isLoading: false,
-  onClick: buttonSpy
+  handleClick: buttonSpy,
+  isLoading: false
 }
 
 describe(`${TEST_DOMAIN} - ${TEST_NAME}`, () => {

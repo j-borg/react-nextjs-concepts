@@ -16,7 +16,7 @@ export const UserDeleteButtonView: React.FC<UserDeleteButtonViewProps> = ({ hand
   if (isError) return <Error />
 
   return (
-    <Button isLoading={isPending} onClick={handleClick}>
+    <Button handleClick={handleClick} isLoading={isPending}>
       {t('button')}
     </Button>
   )
