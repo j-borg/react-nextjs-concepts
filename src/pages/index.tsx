@@ -1,5 +1,6 @@
 import * as React from 'react'
 import classnames from 'classnames'
+import Head from 'next/head'
 import { Open_Sans } from 'next/font/google'
 import { dehydrate, QueryClient } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
@@ -32,6 +33,10 @@ const Page = () => {
 
   return (
     <div className={classnames('p-8', openSans.className)}>
+      <Head>
+        <title>{t('title')}</title>
+      </Head>
+
       <main className='bg-white flex flex-col mx-auto px-8 py-6 rounded-xl space-y-6 w-full max-w-3xl'>
         <header>
           <Heading isBold>{t('title')}</Heading>
